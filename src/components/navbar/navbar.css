@@ -75,11 +75,11 @@
 
 .gpt3__navbar-menu_container {
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
 
-  text-align: end;
+  text-align: center;
   background: var(--color-footer);
   padding: 2rem;
   position: absolute;
