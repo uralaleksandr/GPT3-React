@@ -1,39 +1,36 @@
 import React from "react";
-import "./header.css";
 import people from "../../assets/people.png";
 import ai from "../../assets/ai.png";
+import "./header.css";
 
-const header = () => {
-  return (
-    <div className="gpt3__header_section_padding" id="home">
-      <div className="gpt3__header-content">
-        <h1 className="gradient__text">
-          Lets Build Something amazing with GPT-3 OpenAI
-        </h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-          aperiam, quo omnis ratione quaerat deserunt deleniti ducimus ipsum
-          dolores perspiciatis, esse quisquam beatae nobis corrupti,
-          reprehenderit voluptates quam! Ad, exercitationem?
-        </p>
+const Header = () => (
+  <div className="gpt3__header section__padding" id="home">
+    <div className="gpt3__header-content">
+      <h1 className="gradient__text">
+        Let&apos;s Build Something amazing with GPT-3 OpenAI
+      </h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+        laudantium repudiandae iusto saepe facilis, amet expedita quod sit
+        temporibus explicabo fuga, cupiditate commodi excepturi velit nam! Ex
+        eveniet ullam dolorum.
+      </p>
 
-        <div className="g pt3__header-context__input">
-          <input type="email" placeholder="enter your email address"></input>
-          <button type="button">Get Started</button>
-        </div>
+      <div className="gpt3__header-content__input">
+        <input type="email" placeholder="enter your email address" />
+        <button type="button">Get Started</button>
+      </div>
 
-        <div className="gpt3__header-content__people">
-          <img src={people} alt="people" />
-          <p>
-            1600 people requested access to this website in the last 24 hours
-          </p>
-        </div>
-        <div className="gpt__header-image">
-          <img src={ai} alt="ai" />
-        </div>
+      <div className="gpt3__header-content__people">
+        <img src={people} />
+        <p>1,600+ requested access in last 24 hours</p>
       </div>
     </div>
-  );
-};
 
-export default header;
+    <div className="gpt3__header-image">
+      <img src={ai} />
+    </div>
+  </div>
+);
+
+export default Header;
