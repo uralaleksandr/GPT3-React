@@ -17,7 +17,7 @@ const Header = () => (
       </p>
 
       <div className="gpt3__header-content__input">
-        <input type="email" placeholder="enter your email address" />
+        <input type="email" placeholder="Enter your email address:" />
         <button type="button">Get Started</button>
       </div>
 
